@@ -1,0 +1,150 @@
+:root {
+  --main-text-color: #5f280f;
+  --head-n-foot-border: #e7997c;
+  --h1-color: rgb(228, 8, 8);
+}
+
+body {
+  font-family: 'Bitter', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3a1909;
+  font-size: 20px;
+}
+
+header {
+  background-image: url('../images/header-img.jpg');
+  background-size: cover;
+  border-left-style: solid;
+  border-right-style: dotted;
+  border-color: var(--head-n-foot-border);
+  border-left-width: 6px;
+}
+
+footer {
+  background: linear-gradient(to left, #f3dbd2, var(--head-n-foot-border));
+  border: 6px solid var(--head-n-foot-border);
+}
+
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--h1-color);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #e6cdb6e7;
+}
+
+th {
+  text-align: center;
+}
+
+th,
+td {
+  border: solid 2px black;
+}
+
+.no-border-top {
+  border-top: none;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}
+
+.container {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-div {
+  padding: 0 50px;
+}
+
+.index-main-section {
+  background-color: #f7d7cbe7;
+}
+
+.nav-list {
+  list-style-type: trad-chinese-informal;
+}
+
+.opening {
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filling-text {
+  color: brown;
+  font-style: italic;
+  font-size: 16px;
+}
+
+form .identity,
+.stats {
+  background-color: antiquewhite;
+}
+
+section > p {
+  color: red;
+}
+
+.identity + fieldset {
+  background-color: rgb(201, 227, 217);
+}
+
+ul li:first-child {
+  color: blueviolet;
+  font-weight: 700;
+}
+
+form fieldset:last-of-type {
+  background-color: lavenderblush;
+}
+
+form fieldset:nth-of-type(4) {
+  background-color: lightpink;
+}
+/* три селектори вище мають найбільшу специфічність - (0; 1; 2) */
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+button:focus {
+  border: solid 4px deepskyblue;
+}
+
+h1::before {
+  content: '➜';
+  color: var(--h1-color);
+}
+
+h1::after {
+  content: '✦';
+  color: var(--h1-color);
+}
+
+p::first-letter {
+  font-weight: 700;
+}

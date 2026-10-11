@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Нагадати хто я</a></li>
+          <li>
+            <a href="./pages/table.html">Таблиця</a>
+          </li>
+          <li><a href="#ultraform">Заповнити форму</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="ultraform">
+        <h1>Персональні дані відвідувача</h1>
+        <form>
+          <fieldset class="identity">
+            <legend>Ідентифікаційні дані:</legend>
+            <label for="first-name">Ваше ім'я:</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Ім'я"
+            />
+            <label for="surname">Ваше прізвище:</label>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Прізвище"
+            />
+            <label for="birthday">Дата народження:</label>
+            <input type="date" name="birthday" id="birthday" />
+          </fieldset>
+          <fieldset class="sex">
+            <legend>Стать:</legend>
+            <label>
+              <input type="radio" name="sex" value="male" />Чоловіча</label
+            >
+            <label>
+              <input type="radio" name="sex" value="female" />Жіноча</label
+            >
+            <label
+              >Будь ласка, завантажте фотодоказ:<input type="file" name="proof"
+            /></label>
+          </fieldset>
+          <fieldset class="stats">
+            <legend>Статистичні дані:</legend>
+            <label for="phone-number">Контактний номер телефону:</label>
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Номер телефону"
+            />
+            <label for="email">Адреса Вашої електронної пошти:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Електронна пошта"
+            />
+            <label for="password"
+              >Пароль, який Ви зазвичай використовуєте:<input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Пароль"
+            /></label>
+          </fieldset>
+          <fieldset class="question">
+            <legend>Контрольне питання</legend>
+            <label for="question"
+              >Чи були Ви уважні? Вкажіть ім'я моєї киці:</label
+            >
+            <select id="question" name="question">
+              <option value="nasser">Нассер аль-Катамі</option>
+              <option value="tusik">Тузік</option>
+              <option value="bonia">Боня</option>
+              <option value="maksym">Максим</option>
+            </select>
+          </fieldset>
+          <fieldset class="wish">
+            <legend>Побажання</legend>
+            <label for="message"
+              >Залиште побажання (УВАГА: заборонено залишати НЕГАТИВНІ
+              побажання!):</label
+            >
+            <textarea id="message" name="message" rows="4" cols="65"></textarea>
+          </fieldset>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            value="agreement"
+          /><label for="agreement"
+            >Я згоден(-на) на зберігання, обробку, використання та
+            розповсюдження моєї особистої інформації з будь-якою метою в
+            будь-який час</label
+          >
+          <button type="submit">Надіслати</button>
+        </form>
+        <p>
+          <i
+            >Адміністратор веб-сторінки не несе віповідальності за будь-які
+            наслідки використання персональної інформації, наданої
+            користувачем</i
+          >
+        </p>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:schizocat@i.ua">schizocat@i.ua</a>
+        <a href="tel:+380680022934">+380680022934</a>
+      </address>
+    </footer>
+  </body>
+</html>
