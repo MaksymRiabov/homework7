@@ -8,6 +8,14 @@ body {
   font-family: 'Bitter', serif;
 }
 
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: #3a1909;
@@ -28,19 +36,16 @@ footer {
   border: 6px solid var(--head-n-foot-border);
 }
 
-p,
-h1,
-h2,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 h1,
 h2 {
   text-align: center;
   text-decoration: underline;
   color: var(--h1-color);
+  margin-bottom: 16px;
+}
+
+li {
+  margin: 12px 0;
 }
 
 table {
@@ -70,10 +75,9 @@ td {
 
 .container {
   width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
 }
 
 .header-div {
@@ -107,6 +111,10 @@ form .identity,
 
 section > p {
   color: red;
+}
+
+address > a {
+  margin: 0 12px;
 }
 
 .identity + fieldset {
