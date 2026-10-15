@@ -29,11 +29,13 @@ header {
   border-right-style: dotted;
   border-color: var(--head-n-foot-border);
   border-left-width: 6px;
+  margin-bottom: 24px;
 }
 
 footer {
   background: linear-gradient(to left, #f3dbd2, var(--head-n-foot-border));
   border: 6px solid var(--head-n-foot-border);
+  margin-top: 24px;
 }
 
 h1,
@@ -46,6 +48,14 @@ h2 {
 
 li {
   margin: 12px 0;
+}
+
+li.bottom-margin-li {
+  margin: 0 0 12px;
+}
+
+li.top-margin-li {
+  margin: 12px 0 0;
 }
 
 table {
@@ -65,6 +75,10 @@ td {
   border: solid 2px black;
 }
 
+.who-am-i {
+  margin-bottom: 12px;
+}
+
 .no-border-top {
   border-top: none;
 }
@@ -75,9 +89,8 @@ td {
 
 .container {
   width: 1400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .header-div {
@@ -96,12 +109,18 @@ td {
   color: var(--main-text-color);
   font-size: 16px;
   font-weight: 700;
+  padding-bottom: 12px;
 }
 
 .filling-text {
   color: brown;
   font-style: italic;
   font-size: 16px;
+  margin: 12px 0;
+}
+
+.sleepy-cat {
+  padding-bottom: 12px;
 }
 
 form .identity,
@@ -113,8 +132,8 @@ section > p {
   color: red;
 }
 
-address > a {
-  margin: 0 12px;
+.first-link {
+  margin-right: 12px;
 }
 
 .identity + fieldset {
