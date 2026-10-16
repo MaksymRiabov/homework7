@@ -29,13 +29,11 @@ header {
   border-right-style: dotted;
   border-color: var(--head-n-foot-border);
   border-left-width: 6px;
-  margin-bottom: 24px;
 }
 
 footer {
   background: linear-gradient(to left, #f3dbd2, var(--head-n-foot-border));
   border: 6px solid var(--head-n-foot-border);
-  margin-top: 24px;
 }
 
 h1,
@@ -47,15 +45,11 @@ h2 {
 }
 
 li {
-  margin: 12px 0;
+  margin-bottom: 12px;
 }
 
-li.bottom-margin-li {
-  margin: 0 0 12px;
-}
-
-li.top-margin-li {
-  margin: 12px 0 0;
+section {
+  padding-bottom: 12px;
 }
 
 table {
@@ -109,7 +103,6 @@ td {
   color: var(--main-text-color);
   font-size: 16px;
   font-weight: 700;
-  padding-bottom: 12px;
 }
 
 .filling-text {
@@ -117,10 +110,6 @@ td {
   font-style: italic;
   font-size: 16px;
   margin: 12px 0;
-}
-
-.sleepy-cat {
-  padding-bottom: 12px;
 }
 
 form .identity,
@@ -140,9 +129,17 @@ section > p {
   background-color: rgb(201, 227, 217);
 }
 
+ul li:last-child {
+  margin-bottom: 0;
+}
+
 ul li:first-child {
   color: blueviolet;
   font-weight: 700;
+}
+
+section.index-main-section p:last-child {
+  margin-bottom: 0;
 }
 
 form fieldset:last-of-type {
